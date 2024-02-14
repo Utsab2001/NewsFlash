@@ -4,7 +4,7 @@ import Others from './Others'
 
 const Home = () => {
   return (
-    <div className="w-full h-[465px] flex">
+    <div className="w-full h-96 px-2 flex">
         <BreakingNews/>
         <Others/>
     </div>

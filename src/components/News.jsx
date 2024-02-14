@@ -6,10 +6,10 @@
 
 import React, { useEffect, useState } from "react";
 import NewsItem from "./NewsItem";
+import NewsItem2 from "./NewsItem2";
 import Spinner from "./Spinner";
 import PropTypes from "prop-types";
 import InfiniteScroll from "react-infinite-scroll-component";
-import NewsItemSmall from "./NewsItemSmall";
 
 const News = (props) => {
   const [articles, setArticles] = useState([]);
@@ -52,25 +52,8 @@ const News = (props) => {
   return (
     <>
       <div className="overflow-hidden">
-        <div className="w-full flex h-40 gap-10 overflow-x-scroll items-center overflow-y-hidden no-scrollbar">
-          {articles.map((element) => {
-            return (
-              <>
-                <NewsItemSmall
-                  key={element.article_id}
-                  title={element.title ? element.title : ""}
-                  // description={element.description ? element.description : ""}
-                  imageUrl={element.image_url}
-                  date={element.pubDate}
-                  newsUrl={element.source_url}
-                  author={element.creator}
-                />
-              </>
-            );
-          })}
-        </div>
         <h2 className="text-center my-3 text-3xl font-semibold">
-          NewsNinja - Top headlines on {capitalizeFirstLetter(props.category)}
+          Trending headlines on {capitalizeFirstLetter(props.category)}
         </h2>
         {loading && <Spinner />}
         <InfiniteScroll
@@ -83,7 +66,7 @@ const News = (props) => {
             {articles.map((element) => {
               return (
                 <>
-                  <NewsItem
+                  <NewsItem2
                     key={element.article_id}
                     title={element.title ? element.title : ""}
                     description={element.description ? element.description : ""}
@@ -103,7 +86,7 @@ const News = (props) => {
 };
 
 News.defaultProps = {
-  country: "us",
+  country: "in",
   // pageSize: 8,
   category: "sports",
 };

@@ -8,7 +8,7 @@ const Header = () => {
   const year = new Date().getFullYear();
   return (
     <>
-      <div className="bg-black font-semibold h-[50px] text-sm flex justify-around items-center text-white">
+      <div className="bg-black font-semibold h-[40px] text-sm flex justify-around items-center text-white">
         <p className="left">{date} {day} {month} {year}</p>
         <div className="right flex gap-4 ml-10">
           <ul className="flex justify-between gap-3">
