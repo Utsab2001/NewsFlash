@@ -51,8 +51,8 @@ const News = (props) => {
 
   return (
     <>
-      <div className="">
-        <div className="w-auto flex gap-10 ">
+      <div className="overflow-hidden">
+        <div className="w-full flex h-40 gap-10 overflow-x-scroll items-center overflow-y-hidden no-scrollbar">
           {articles.map((element) => {
             return (
               <>
@@ -69,7 +69,6 @@ const News = (props) => {
             );
           })}
         </div>
-        {/* </div> */}
         <h2 className="text-center my-3 text-3xl font-semibold">
           NewsNinja - Top headlines on {capitalizeFirstLetter(props.category)}
         </h2>

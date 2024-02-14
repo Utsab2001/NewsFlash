@@ -3,6 +3,9 @@ import './App.css'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
 import News from './components/News'
+import WorldLatestNews from './components/WorldLatestNews'
+import BreakingNews from './components/BreakingNews'
+import Home from './components/Home'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +14,10 @@ function App() {
     <>
       <Header/>
       <Navbar/>
-      <News/>
+      <Home/>
+      {/* <WorldLatestNews/> */}
+      {/* <BreakingNews /> */}
+      {/* <News/> */}
     </>
   )
 }
