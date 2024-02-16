@@ -35,7 +35,7 @@ const Weather = () => {
       {forecast && forecast.forecastday && forecast.forecastday[0] && (
         <>
           <div
-            className="w-full h-56 gap-3 flex flex-col p-3 text-white"
+            className="w-full rounded-xl h-60 gap-3 flex flex-col p-3 text-white"
             style={{
               backgroundImage:
                 "url(https://images.pexels.com/photos/1154510/pexels-photo-1154510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)",
@@ -59,9 +59,9 @@ const Weather = () => {
               </div>
             </div>
             <div
-              className="flex flex-col justify-center overflow-y-hidden overflow-x-scroll no-scrollbar h-20"
+              className="flex flex-col justify-center overflow-y-hidden overflow-x-scroll no-scrollbar h-24"
             >
-              <div className="flex gap-4 justify-between ">
+              <div className="flex gap-4 justify-between">
                 {array1.map((item) => {
                   // Check if forecast and forecastday exist and have length > 0
                   if (
@@ -74,7 +74,7 @@ const Weather = () => {
                     if (hourData) {
                       return (
                         <div
-                          className="flex text-xs px-5 py-2 rounded-xl gap-2 flex-col items-center"
+                          className="flex text-xs px-5 py-2 rounded-lg gap-2 flex-col items-center"
                           style={{ backgroundColor: "rgba(48, 58, 58, 0.7)" }}
                         >
                           <p className="">{hourData.time.substring(11)}</p>

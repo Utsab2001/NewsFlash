@@ -8,6 +8,7 @@ import News from "./components/News";
 // import Home from './components/Home'
 import { Outlet } from "react-router-dom";
 import SmallNews from "./components/SmallNews";
+import Others from "./components/Others";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +17,7 @@ function App() {
     <>
       <Header />
       <Navbar />
+      {/* <Others /> */}
       <SmallNews/>
       <Outlet />
       {/* <Home/> */}

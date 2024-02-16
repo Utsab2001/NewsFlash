@@ -4,11 +4,11 @@ import Others from './Others'
 
 const Home = () => {
   return (
-    <div className="w-full h-96 px-2 flex">
-        <BreakingNews/>
-        <Others/>
+    <div className="w-full h-96 px-2 pl-0 flex">
+      <Others />
+      <BreakingNews />
     </div>
-  )
+  );
 }
 
 export default Home
