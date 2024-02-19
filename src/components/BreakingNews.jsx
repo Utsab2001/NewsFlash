@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import NewsItemSmall from "./NewsItemSmall";
 import BreakingNewsItem from "./BreakingNewsItem";
 
 const BreakingNews = () => {
@@ -56,7 +55,7 @@ const BreakingNews = () => {
               </p>
             </div>
           </div>
-          <div className="right w-1/3  overflow-x-hidden overflow-y-scroll no-scrollbar">
+          <div className="right w-1/3 p-1 pr-0 gap-1 h-auto overflow-x-hidden overflow-y-scroll no-scrollbar">
             {articles.map((element) => {
               return (
                 <>

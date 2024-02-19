@@ -5,7 +5,7 @@ const BreakingNewsItem = (props) => {
   return (
     <>
       <div
-        className="left w-full h-1/2 flex flex-col gap-2 bg-cover bg-center items-left justify-end p-3 relative"
+        className="left mb-1 w-full h-1/2 flex flex-col gap-2 bg-cover bg-center items-left justify-end p-3 relative"
         style={{ backgroundImage: `url(${imageUrl})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>

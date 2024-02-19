@@ -14,7 +14,7 @@ const Header = () => {
         </p>
         <div className="right flex gap-6 ml-10">
           <ul className="flex justify-between gap-3">
-            <a href="">About</a>
+            <a href="">News</a>
             <a href="">Something</a>
             <a href="">Contact Us</a>
           </ul>
