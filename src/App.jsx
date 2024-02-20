@@ -10,6 +10,8 @@ import { Outlet } from "react-router-dom";
 import SmallNews from "./components/SmallNews";
 import Others from "./components/Others";
 import Contact from "./components/Contact";
+import SearchBar from "./components/SearchBar";
+import SearchNews from "./components/SearchNews";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,8 +20,9 @@ function App() {
     <>
       <Header />
       <Navbar />
+      {/* <SearchNews/> */}
       {/* <Others /> */}
-      <SmallNews/>
+      {/* <SmallNews/> */}
       <Outlet />
       {/* <Contact/> */}
       {/* <Home/> */}

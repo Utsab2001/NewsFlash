@@ -5,7 +5,15 @@ const NewsItemSmall = (props) => {
   return (
     <>
       <div className="flex w-[420px] mr-2 gap-5">
-        <img src={imageUrl} alt="" className="w-[100px] h-20" />
+        <img
+          src={
+            imageUrl
+              ? imageUrl
+              : "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202210/breaking_latest_news_1200x675_1-sixteen_nine_736.jpg?VersionId=nE.pw_mR4zzTbcv9z1cxN6VuxY3M7UCx"
+          }
+          alt=""
+          className="w-[100px] h-20"
+        />
         <div className="right flex flex-col w-[350px]">
           <div className="text-xs flex gap-2 font-semibold">
             <p className="text-red-600">By {author}</p>

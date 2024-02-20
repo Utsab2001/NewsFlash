@@ -5,12 +5,16 @@ import './index.css'
 import {Router, Route, RouterProvider, createBrowserRouter, createRoutesFromElements} from 'react-router-dom'
 import News from './components/News.jsx'
 import Home from './components/Home.jsx'
+import Contact from './components/Contact.jsx'
+import SearchNews from './components/SearchNews.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App/>}>
       <Route path="" element={<Home/>} />
       <Route path="/home" element={<Home/>} />
+      <Route path="/contact" element={<Contact/>} />
+      <Route path="/search" element={<SearchNews/>} />
       <Route
         path="business"
         element={

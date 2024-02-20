@@ -4,12 +4,15 @@ const NewsItem2 = (props) => {
   let { title, description, date, imageUrl, newsUrl, author } = props;
   return (
     <>
-      <div className="flex w-[48%] h-52 mr-2 gap-5 items-center p-5" to={newsUrl}>
+      <div
+        className="flex w-[48%] h-52 mr-2 gap-5 items-center p-5"
+        to={newsUrl}
+      >
         <img
           src={
             imageUrl
               ? imageUrl
-              : "https://images.pexels.com/photos/902194/pexels-photo-902194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              : "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202210/breaking_latest_news_1200x675_1-sixteen_nine_736.jpg?VersionId=nE.pw_mR4zzTbcv9z1cxN6VuxY3M7UCx"
           }
           alt=""
           className="w-1/3 h-36"
