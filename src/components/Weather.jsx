@@ -5,7 +5,7 @@ const Weather = () => {
   const [forecast, setForecast] = useState({});
   const API_KEY = "cade3e429711499681b190434240402";
   const [URL, setURL] = useState(
-    `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=kolkata&aqi=yes&days=5`
+    `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=kolkata&aqi=yes&days=5`
   );
     const array1 = [
       0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,

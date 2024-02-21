@@ -22,7 +22,7 @@ function App() {
       <Navbar />
       {/* <SearchNews/> */}
       {/* <Others /> */}
-      {/* <SmallNews/> */}
+      <SmallNews/>
       <Outlet />
       {/* <Contact/> */}
       {/* <Home/> */}
