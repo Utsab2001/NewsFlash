@@ -70,11 +70,13 @@ const SearchNews = (props) => {
 
   return (
     <>
-      <SearchBar
-        placeholder={`Search for news i.e election, rail, exam etc.`}
-        handleInputChange={handleInputChange}
-        handleSearch={handleSearch}
-      />
+      <div className="flex mt-2 justify-center">
+        <SearchBar
+          placeholder={`Search for news i.e election, rail, exam etc.`}
+          handleInputChange={handleInputChange}
+          handleSearch={handleSearch}
+        />
+      </div>
       <div className="overflow-hidden">
         <h2 className="text-center my-3 text-3xl font-semibold">
           {/* Trending headlines on {capitalizeFirstLetter(category)} */}

@@ -8,7 +8,7 @@ const Header = () => {
   const year = new Date().getFullYear();
   return (
     <>
-      <div className="bg-black font-semibold h-[40px] text-sm px-10 flex justify-between items-center text-white">
+      <div className="bg-black font-semibold h-[30px] sm:h-[40px] text-xs sm:text-sm px-5 sm:px-10 flex justify-between items-center text-white">
         <p className="left">
           {date} {day} {month} {year}
         </p>
@@ -22,13 +22,13 @@ const Header = () => {
           </ul>
           <ul className="flex justify-between gap-3 items-center">
             <a href="">
-              <img src="/facebook.png" alt="" width={16} />
+              <img src="/facebook.png" alt="" className="w-3 sm:w-4" />
             </a>
             <a href="">
-              <img src="/twitter.png" alt="" width={16} />
+              <img src="/twitter.png" alt="" className="w-3 sm:w-4" />
             </a>
             <a href="">
-              <img src="/instagram.png" alt="" width={16} />
+              <img src="/instagram.png" alt="" className="w-3 sm:w-4" />
             </a>
           </ul>
         </div>

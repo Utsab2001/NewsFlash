@@ -52,8 +52,9 @@ const News = (props) => {
   return (
     <>
       <div className="overflow-hidden">
-        <h2 className="text-center my-3 text-3xl font-semibold">
-          Trending headlines on {capitalizeFirstLetter(props.category)}
+        <h2 className="text-center my-3 text-2xl md:text-3xl font-semibold">
+          Trending headlines on{" "}
+          <span className="text-red-600">{capitalizeFirstLetter(props.category)}</span>
         </h2>
         {loading && <Spinner />}
         <InfiniteScroll
@@ -62,7 +63,7 @@ const News = (props) => {
           hasMore={articles.length !== totalResults}
           loader={loading && <Spinner />}
         >
-          <div className="flex flex-wrap justify-center">
+          <div className="flex flex-wrap justify-between lg:justify-center">
             {articles.map((element) => {
               return (
                 <>

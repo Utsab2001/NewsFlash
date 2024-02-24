@@ -35,7 +35,7 @@ const Weather = () => {
       {forecast && forecast.forecastday && forecast.forecastday[0] && (
         <>
           <div
-            className="w-full rounded-xl h-60 gap-3 flex flex-col p-3 text-white"
+            className="w-1/2 md:w-full rounded-xl h-64 gap-3 flex flex-col p-3 text-white"
             style={{
               backgroundImage:
                 "url(https://images.pexels.com/photos/1154510/pexels-photo-1154510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)",

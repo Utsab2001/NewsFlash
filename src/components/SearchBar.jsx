@@ -13,9 +13,9 @@ const SearchBar = ({ placeholder, handleInputChange, handleSearch }) => {
       />
       <button
         onClick={handleSearch}
-        className="bg-red-600 w-1/5 text-white py-2 px-4 hover:bg-red-400 focus:outline-none"
+        className="bg-red-600 h-full flex items-center justify-center w-1/5 text-white p-2 hover:bg-red-400 focus:outline-none"
       >
-        Search
+        <img src="/search.png" alt="" className="w-5" />
       </button>
     </div>
   );

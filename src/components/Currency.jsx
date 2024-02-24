@@ -36,13 +36,13 @@ const Currency = () => {
     <>
       {currency && (
         <div
-          className="w-full h-72 gap-3 rounded-xl flex flex-col p-3 text-white justify-center"
+          className="w-full h-64 md:h-72 gap-3 rounded-xl flex flex-col p-3 text-white justify-center "
           style={{
             backgroundImage:
               "url(https://images.pexels.com/photos/1154510/pexels-photo-1154510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)",
           }}
         >
-          <div className="flex justify-between">
+          <div className="flex py-2 justify-between">
             <p className="text-xs text-teal-500 font-semibold ml-1">
               Currency Rate
             </p>

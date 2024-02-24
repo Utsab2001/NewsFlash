@@ -4,6 +4,7 @@ const NewsItemSmall = (props) => {
      let { title, date, imageUrl, newsUrl, author } = props;
   return (
     <>
+        {/* <div className={`flex w-[${width}] mr-2 gap-5`}> */}
       <div className="flex w-[420px] mr-2 gap-5">
         <img
           src={
@@ -20,7 +21,7 @@ const NewsItemSmall = (props) => {
             <p className="text-gray-600"> {date}</p>
           </div>
           <a href={newsUrl} className="text-base cursor-pointer font-bold">
-            {title.substring(0, 50)}
+            {title.substring(0, 50)}...
           </a>
         </div>
       </div>
