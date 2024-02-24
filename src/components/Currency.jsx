@@ -36,7 +36,7 @@ const Currency = () => {
     <>
       {currency && (
         <div
-          className="w-full h-64 md:h-72 gap-3 rounded-xl flex flex-col p-3 text-white justify-center "
+          className="w-full h-64 md:h-72 gap-2 md:gap-3 rounded-xl flex flex-col p-2 md:p-3 text-white justify-center "
           style={{
             backgroundImage:
               "url(https://images.pexels.com/photos/1154510/pexels-photo-1154510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)",
@@ -52,33 +52,33 @@ const Currency = () => {
           </div>
 
           <div
-            className="flex flex-col gap-2 p-2 rounded-lg w-11/12"
+            className="flex flex-col gap-2 p-2 rounded-lg w-full"
             style={{ backgroundColor: "rgba(48, 58, 58, 0.7)" }}
           >
             <p className="text-xs">Dollar</p>
             <div className="text-sm  flex gap-2 items-center">
               <p>1 $ =₹ {1 / currency.usd}</p>
-              <img src="/decrease.png" alt="" width={20} />
+              <img src="/decrease.png" alt="" className="w-5" />
             </div>
           </div>
           <div
-            className="flex flex-col gap-2 p-2 rounded-lg w-11/12"
+            className="flex flex-col gap-2 p-2 rounded-lg w-full"
             style={{ backgroundColor: "rgba(48, 58, 58, 0.7)" }}
           >
             <p className="text-xs">Euro</p>
             <div className="text-sm flex gap-2 items-center">
               <p>1 € =₹ {1 / currency.eur}</p>
-              <img src="/increase.png" alt="" width={20} />
+              <img src="/increase.png" alt="" className="w-5" />
             </div>
           </div>
           <div
-            className="flex flex-col gap-2 p-2 rounded-lg w-11/12"
+            className="flex flex-col gap-2 p-2 rounded-lg w-full"
             style={{ backgroundColor: "rgba(48, 58, 58, 0.7)" }}
           >
             <p className="text-xs">Pound</p>
             <div className="text-sm flex gap-2 items-center">
               <p>1 £ =₹ {1 / currency.gbp}</p>
-              <img src="/decrease.png" alt="" width={20} />
+              <img src="/decrease.png" alt="" className="w-5" />
             </div>
           </div>
         </div>

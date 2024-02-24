@@ -8,7 +8,7 @@ import Currency from './Currency';
 
 const Home = () => {
   return (
-    <div className="w-full flex-col">
+    <div className="w-full mt-3 md:mt-0 flex-col">
       <div className="w-full h-auto md:h-96 px-2 pl-0 flex">
         <div className="w-1/4 hidden lg:flex overflow-x-hidden lg:flex-col p-1 lg:gap-1 overflow-y-scroll no-scrollbar">
           {/* <Others /> */}
@@ -17,7 +17,7 @@ const Home = () => {
         </div>
         <BreakingNews />
       </div>
-      <div className="w-full md:hidden flex overflow-y-hidden p-1 gap-1 overflow-x-scroll no-scrollbar">
+      <div className="w-full md:hidden flex flex-col xs:flex-row overflow-y-hidden p-1 gap-1 overflow-x-scroll no-scrollbar">
         <Weather />
         <Currency />
       </div>

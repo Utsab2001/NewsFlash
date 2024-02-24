@@ -8,7 +8,7 @@ const Header = () => {
   const year = new Date().getFullYear();
   return (
     <>
-      <div className="bg-black font-semibold h-[30px] sm:h-[40px] text-xs sm:text-sm px-5 sm:px-10 flex justify-between items-center text-white">
+      <div className="bg-black font-semibold h-[30px] sm:h-[40px] text-xs sm:text-sm px-1 xs:px-5 sm:px-10 flex justify-between items-center text-white">
         <p className="left">
           {date} {day} {month} {year}
         </p>

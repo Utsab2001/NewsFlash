@@ -34,9 +34,9 @@ const BreakingNews = () => {
   return (
     <>
       {articles && articles[0] && (
-        <div className="w-full lg:w-3/4 md:h-full flex items-center justify-center px-2 md:px-1 lg:px-0 flex-col md:flex-row  overflow-hidden">
+        <div className="w-full lg:w-3/4 md:h-full flex itens-center justify-center px-2 md:px-1 lg:px-0 flex-col md:flex-row  overflow-hidden">
           <div
-            className="w-[95%] sm:w-[99%] h-[250px] sm:h-[300px] md:w-2/3 lg:w-2/3 md:h-full flex flex-col gap-2 sm:gap-3 bg-cover bg-center items-left justify-end p-5 relative"
+            className="ml-0.5 w-full h-[250px] sm:h-[300px] md:w-2/3 lg:w-2/3 md:h-full flex flex-col gap-2 sm:gap-3 bg-cover bg-center items-left justify-end p-5 relative"
             style={{ backgroundImage: `url(${articles[0].image_url})` }}
           >
             <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -45,15 +45,15 @@ const BreakingNews = () => {
             </p>
             <a
               href={articles[0].source_url}
-              className="text-lg sm:text-xl xl:text-2xl z-10 relative font-bold text-white"
+              className="text-sm xs:text-base sm:text-xl xl:text-2xl z-10 relative font-bold text-white"
             >
               {articles[0].title ? articles[0].title : "Breaking News"}
             </a>
             <div className="flex gap-3 z-10 relative">
-              <p className="text-sm font-semibold text-red-600">
+              <p className="text-xs xs:text-sm font-semibold text-red-600">
                 By {articles[0].creator ? articles[0].creator : "Unknown"}
               </p>
-              <p className="text-sm font-semibold text-white">
+              <p className="text-xs xs:text-sm font-semibold text-white">
                 {articles[0].pubDate}
               </p>
             </div>
